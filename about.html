@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CS 260 Lab 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="global.css">
+    <style>
+        .content {
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            grid-gap: 24px;
+        }
+        .about {
+            margin: 24px;
+        }
+        .portrait {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            padding: 20px;
+        }
+        @media only screen and (max-width: 1400px) {
+            .content {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media only screen and (max-width: 1200px) {
+            .content {
+                grid-template-columns: auto;
+                grid-template-rows: 2fr 3fr;
+            }
+        }
+        @media only screen and (max-width: 1000px) {
+            .content {
+                grid-template-columns: auto;
+                grid-template-rows: 1fr 2fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">Katinov Photography</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-dropdown" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div id="nav-dropdown" class="collapse navbar-collapse">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                <a class="nav-item nav-link" href="reviews.html">Reviews</a>
+                <a class="nav-item nav-link active" href="about.html">About</a>
+              </div>
+        </div>
+    </nav>
+
+    <div class="content container">
+        <img class="portrait" src="http://katinov.com/en/images/stoian-katinov.jpg"/>
+
+        <div class="about">
+            <h1>About Me</h1>
+            <br/>
+            <p>Stoyan Katinov - Born in a Bulgaria and father to a wonderful daughter.</p>
+
+            <p>When I was 13, I found my passion for photography with my first manual film camera, back when everything was very
+                different. Throughout the years, I have grown with the changes in the industry and even studied photography in
+                school to keep myself up to date with technology and its vast opportunities.</p>
+
+            <p>I have shot graduates, families, kids, wedding portraits and many different people and their life events. I love
+                the natural look and emotion captured when photographing children and their families. Portraits are my passion,
+                to capture the light in a person's eye.</p>
+
+            <p>Nothing has ever been so challenging yet so exhilarating as photographing a wedding. As I've shot weddings, I've
+                learned to recognize what beautiful stories are being played out, right in front of my eyes. A wedding
+                photographer needs to be the master of the camera and nearly all photography disciplines. A photographer must be
+                vigilant and able to execute each skill consecutively so as to not miss those perfect shots. Weddings will
+                produce opportunities for portraits, close ups, macros, still life, photojournalism, action shots and so much
+                more. Weddings are history made in real life.</p>
+
+            <p>Through my photos I want to capture the best qualities of my subjects and tell their beautifully unique story.
+                Everyone has their own story. Although, now that most people can capture images on their phones and are capable
+                of telling their own stories, I am so grateful and happy to be a part of that. I love it when I get to capture
+                even just a few moments of their lives and see their reactions and their happiness in my perspective of their
+                stories.</p>
+
+            <p>I want to show everyone the best, most beautiful parts of themselves and their stories.</p>
+        </div>
+    </div>
+
+    <footer class="sticky-footer py-4 bg-dark text-white-50">
+        <div class="container text-center">
+            <a class="text-light" href="https://github.com/bdmcd/portfolio">GitHub Repo</a>
+        </div>
+    </footer>
+</body>
+
+</html>
